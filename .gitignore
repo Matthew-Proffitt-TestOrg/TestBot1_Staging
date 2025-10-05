@@ -1,0 +1,14 @@
+# Generated secrets and local environment overrides (never commit).
+.env.local
+
+# Demo artifacts produced by wallet export commands.
+keystore.json
+
+# TypeScript build outputs.
+dist/
+packages/*/dist/
+
+# Node module directories.
+node_modules/
+packages/*/node_modules/
+

@@ -1,16 +1,8 @@
-{
-  "chains": [
-    {
-      "id": 1,
-      "name": "ethereum",
-      "rpcUrl": "https://YOUR_RPC",
-      "multicall": "0x0000000000000000000000000000000000000000"
-    },
-    {
-      "id": 42161,
-      "name": "arbitrum",
-      "rpcUrl": "https://YOUR_ARBITRUM_RPC",
-      "multicall": "0x0000000000000000000000000000000000000000"
-    }
-  ]
-}
+[
+  {
+    "id": 11155111,
+    "name": "sepolia",
+    "rpcUrl": "${SEPOLIA_RPC_URL}",
+    "multicall": "0x0000000000000000000000000000000000000000"
+  }
+]
