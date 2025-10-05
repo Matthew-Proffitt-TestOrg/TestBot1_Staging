@@ -1,0 +1,11 @@
+{
+  "stablecoins": {
+    "USDC": {
+      "decimals": 6
+    }
+  },
+  "sources": [
+    "chainlink",
+    "uniswapV3Twap"
+  ]
+}

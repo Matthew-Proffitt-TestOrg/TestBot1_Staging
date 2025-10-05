@@ -1,0 +1,9 @@
+{
+  "denyTokens": [],
+  "maxExposureUsd": 100000,
+  "slippageBpsDefault": 50,
+  "depegGuard": {
+    "enabled": true,
+    "maxDeviationBps": 300
+  }
+}

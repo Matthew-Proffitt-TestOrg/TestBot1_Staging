@@ -1,19 +1,21 @@
 {
-  "name": "@org/root",
+  "name": "@org/trading-bot",
   "private": true,
-  "version": "0.1.0",
-  "packageManager": "pnpm@8.15.6",
-  "scripts": {
-    "build": "pnpm -r run build",
-    "clean": "pnpm -r --if-present run clean",
-    "typecheck": "pnpm -r --if-present run typecheck",
-    "lint": "pnpm -r --if-present run lint",
-    "test": "pnpm -r --if-present run test"
-  },
+  "packageManager": "pnpm@9.6.0",
   "workspaces": [
     "packages/*"
   ],
-  "engines": {
-    "node": ">=18.18"
+  "scripts": {
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "test": "turbo run test",
+    "typecheck": "turbo run typecheck",
+    "docs": "turbo run docs",
+    "coverage": "turbo run coverage",
+    "prepare": "echo 'husky placeholder'"
+  },
+  "devDependencies": {
+    "turbo": "^2.1.0",
+    "typescript": "^5.6.3"
   }
 }

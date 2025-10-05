@@ -4,35 +4,42 @@
     "module": "ESNext",
     "moduleResolution": "Bundler",
     "strict": true,
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    "skipLibCheck": true,
-    "declaration": true,
-    "sourceMap": true,
+    "noUncheckedIndexedAccess": true,
     "resolveJsonModule": true,
-    "outDir": "dist",
-    "rootDir": "src",
-    "types": ["node"],
-    "lib": ["ES2022"],
-    "allowJs": false,
-    "verbatimModuleSyntax": true,
+    "declaration": true,
+    "composite": true,
+    "skipLibCheck": true,
+    "types": [
+      "node"
+    ],
     "baseUrl": ".",
     "paths": {
-      "@org/types": [
-        "packages/types/dist/index.d.ts",
-        "packages/types/src/index.ts"
-      ],
       "@org/types/*": [
-        "packages/types/dist/*.d.ts",
         "packages/types/src/*"
       ],
-      "@org/wallet": [
-        "packages/wallet/dist/index.d.ts",
-        "packages/wallet/src/index.ts"
+      "@org/math/*": [
+        "packages/math/src/*"
       ],
-      "@org/wallet/*": [
-        "packages/wallet/dist/*.d.ts",
-        "packages/wallet/src/*"
+      "@org/risk/*": [
+        "packages/risk/src/*"
+      ],
+      "@org/core-exec/*": [
+        "packages/core-exec/src/*"
+      ],
+      "@org/adapters-evm/*": [
+        "packages/adapters-evm/src/*"
+      ],
+      "@org/adapters-solana/*": [
+        "packages/adapters-solana/src/*"
+      ],
+      "@org/sim/*": [
+        "packages/sim/src/*"
+      ],
+      "@org/data/*": [
+        "packages/data/src/*"
+      ],
+      "@org/sdk/*": [
+        "packages/sdk/src/*"
       ]
     }
   }
