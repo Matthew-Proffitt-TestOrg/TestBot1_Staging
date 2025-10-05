@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "strict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "declaration": true,
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "outDir": "dist",
+    "rootDir": "src",
+    "types": ["node"],
+    "lib": ["ES2022"],
+    "allowJs": false,
+    "verbatimModuleSyntax": true,
+    "baseUrl": ".",
+    "paths": {
+      "@org/types": [
+        "packages/types/dist/index.d.ts",
+        "packages/types/src/index.ts"
+      ],
+      "@org/types/*": [
+        "packages/types/dist/*.d.ts",
+        "packages/types/src/*"
+      ],
+      "@org/wallet": [
+        "packages/wallet/dist/index.d.ts",
+        "packages/wallet/src/index.ts"
+      ],
+      "@org/wallet/*": [
+        "packages/wallet/dist/*.d.ts",
+        "packages/wallet/src/*"
+      ]
+    }
+  }
+}
